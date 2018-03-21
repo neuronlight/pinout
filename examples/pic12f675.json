@@ -1,0 +1,164 @@
+{
+	"name": "PIC12F675",
+	"description": "8-Pin FLASH-Based 8-Bit CMOS Microcontroller",
+	"package-type": "SDIP",
+	"pin-count": 8,
+	"pinout": {
+		"pins": {
+			"1": {
+				"name": "VDD",
+				"signal-direction": "none",
+				"description": "Positive supply"
+			},
+			"2": [
+					{
+						"name": "GP5",
+						"signal-direction": "both",
+						"description": "Bi-directional I/O w/ programmable pull-up and interrupt-on-change"
+					},
+					{
+						"name": "T1CKI",
+						"signal-direction": "in",
+						"description": "Timer1 clock in"
+					},
+					{
+						"name": "OSC1",
+						"signal-direction": "none",
+						"description": "Crystal/resonator"
+					},
+					{
+						"name": "CLKIN",
+						"signal-direction": "in",
+						"description": "External clock input/RC oscillator connection"
+					}
+			]
+			,"3": [
+					{
+						"name": "GP4",
+						"signal-direction": "both",
+						"description": "Bi-directional I/O w/ programmable pull-up and interrupt-on-change"
+					},
+					{
+						"name": "AN3",
+						"signal-direction": "in",
+						"description": "A/D Channel 3 input"
+					},
+					{
+						"name": "T1G",
+						"inverted": true,
+						"signal-direction": "in",
+						"description": "Timer1 gate"
+					},
+					{
+						"name": "OSC2",
+						"signal-direction": "none",
+						"description": "Crystal/resonator"
+					},
+					{
+						"name": "CLKOUT",
+						"signal-direction": "out",
+						"description": "FOSC/4 output"
+					}
+			]
+			,"4": [
+					{
+						"name": "GP3",
+						"signal-direction": "in",
+						"description": "Input port w/ interrupt-on-change"
+					},
+					{
+						"name": "MCLR",
+						"inverted": true,
+						"signal-direction": "in",
+						"description": "Master clear"
+					},
+					{
+						"name": "VPP",
+						"signal-direction": "in",
+						"description": "Programming voltage"
+					}
+			]
+			,"5": [
+					{
+						"name": "GP2",
+						"signal-direction": "both",
+						"description": "Bi-directional I/O w/ programmable pull-up and interrupt-on-change"
+					},
+					{
+						"name": "AN2",
+						"signal-direction": "in",
+						"description": "A/D Channel 2 input"
+					},
+					{
+						"name": "T0CKI",
+						"signal-direction": "in",
+						"description": "Timer0 clock input"
+					},
+					{
+						"name": "INT",
+						"signal-direction": "in",
+						"description": "External interrupt"
+					},
+					{
+						"name": "COUT",
+						"signal-direction": "out",
+						"description": "Comparator output"
+					}
+			]
+			,"6": [
+					{
+						"name": "GP1",
+						"signal-direction": "both",
+						"description": "Bi-directional I/O w/ programmable pull-up and interrupt-on-change"
+					},
+					{
+						"name": "AN1",
+						"signal-direction": "in",
+						"description": "A/D Channel 1 input"
+					},
+					{
+						"name": "CIN-",
+						"signal-direction": "in",
+						"description": "Comparator input"
+					},
+					{
+						"name": "VREF",
+						"signal-direction": "in",
+						"description": "External voltage reference"
+					},
+					{
+						"name": "ICSPCLK",
+						"signal-direction": "in",
+						"description": "Serial programming clock"
+					}
+			]
+			,"7": [
+					{
+						"name": "GP0",
+						"signal-direction": "both",
+						"description": "Bi-directional I/O w/ programmable pull-up and interrupt-on-change"
+					},
+					{
+						"name": "AN0",
+						"signal-direction": "in",
+						"description": "A/D Channel 0 input"
+					},
+					{
+						"name": "CIN+",
+						"signal-direction": "in",
+						"description": "Comparator input"
+					},
+					{
+						"name": "ICSPDAT",
+						"signal-direction": "both",
+						"description": "Serial programming I/O"
+					}
+			],
+			"8": {
+				"name": "VSS",
+				"signal-direction": "none",
+				"description": "Ground reference"
+			}
+		}
+	}
+}
