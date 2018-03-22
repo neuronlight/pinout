@@ -1,18 +1,18 @@
 {
-    "name": "neuronlight/pinout",
-    "description": "Electronic device pinout renderer",
-    "keywords": ["pinout","ic"],
-    "homepage": "https://github.com/neuronlight/pinout",
-    "license": "GPL-3.0",
-    "authors": [
-        {
-            "name": "Simon Buckwell",
-            "email": "neuronlight@gmail.com",
-            "homepage": "http://www.neuronlight.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
+	"name": "neuronlight/pinout",
+	"description": "Electronic device pinout renderer",
+	"keywords": ["pinout","ic"],
+	"homepage": "https://github.com/neuronlight/pinout",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Simon Buckwell",
+			"email": "neuronlight@gmail.com",
+			"homepage": "http://www.neuronlight.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
 		"php": ">=7.0",
 		"ext-gd": ">=2.0"
 	}
