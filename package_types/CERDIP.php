@@ -1,5 +1,5 @@
 <?php // CERDIP Package //>
 
-require_once('CERDIP.php');
+require_once('DIP.php');
 
 class CERDIP extends DIP {}

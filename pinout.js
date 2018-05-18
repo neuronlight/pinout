@@ -10,7 +10,8 @@ if (pname !== "/") {
 }
 $(function() {
 	$.each($("*[data-device]"), function() {
-		var fname = $(this).attr("data-device") + ".json";
+		var fname = $(this).attr("data-device");
+		if  (fname.substr(-5).toLowerCase() != '.json') fname += '.json';
 		if (fname.charAt(0) === "/") pname = "";
 		var qs = "f=" + pname + fname;
 		if ($(this).attr("data-width") != undefined) qs += "&w=" + $(this).attr("data-width");

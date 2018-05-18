@@ -5,10 +5,12 @@ namespace Pinout;
 define('FONT', __DIR__ .'/FreeSans.ttf');
 
 // look for and load config file if found
-$path = $_GET['f'];
-$path = pathinfo($path, PATHINFO_DIRNAME).'/pinout_config.json';
-$path = $_SERVER["DOCUMENT_ROOT"] . $path;
-parseConfig($path);
+if (isset($_GET['f'])) {
+	$path = $_GET['f'];
+	$path = $_SERVER["DOCUMENT_ROOT"] . $path;
+	$path = pathinfo($path, PATHINFO_DIRNAME) . '/pinout_config.json';
+	parseConfig($path);
+}
 
 // load default config - will populate any constants not already defined
 $path = __DIR__ . '/default_config.json';

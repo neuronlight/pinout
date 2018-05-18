@@ -6,7 +6,7 @@ Pinout facilitates the rendering of integrated circuit pinout diagrams from a JS
 
 ```$ composer require neuronlight/pinout```
 
-Test the installation by browsing to ```/vendor/neuronlight/pinout/examples/```
+Test the installation by browsing to ```/vendor/neuronlight/pinout/examples/index.php```
 
 You should see a pinout diagram for the PIC12F675 microcontroller.
 
@@ -121,5 +121,18 @@ Element attributes supported are:
 ```data-background``` - background color
 
 
+## Direct use
+
+The device image can be called directly. The example image is called, for example, with the form:
+
+```
+/vendor/neuronlight/pinout/pinout.php?f=/vendor/neuronlight/pinout/examples/pic12f675.json&w=600&h=300&c=f40
+```
+
+The file parameter can be omitted when calling directly; the device JSON being sent as a POST parameter called 'dev' instead. When called in such a way the appearance can only be changed from that defined in the default configuration file by way of ```$_GET``` parameters (i.e. no custom config file will be loaded).
+
+## Experimenter
+
+There's a basic tool included for experimenting with the pinout functions that can be found at ```/vendor/neuronlight/pinout/examples/experimenter.php``` (html5 browser required).
 
 Share and enjoy.
