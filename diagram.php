@@ -193,6 +193,7 @@ class Diagram
 		foreach ($c as &$i) {
 			$st .= $sep;
 			$sep = ' / ';
+			if (!isset($i->inverted)) $i->inverted = false;
 			if ($i->inverted) {
 				$bb = imagettfbbox($this->sc * $sc, 0, FONT, $st);
 				$i->x1 = abs($bb[4] - $bb[0]);

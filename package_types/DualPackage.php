@@ -83,7 +83,7 @@ abstract class DualPackage
 			if (!empty($this->dev->pinout->pins->{(string)$i})) $lbl = $this->dev->pinout->pins->{(string)$i};
 			elseif (!empty($this->dev->pinout->undefined)) $lbl = $this->dev->pinout->undefined;
 			else $lbl = null;
-			if (!empty(lbl)) {
+			if (!empty($lbl)) {
 				if ($i <= $n / 2) {
 					$y = ($by - $of) - ($this->p * ($i - 1));
 					$xm = -1;
